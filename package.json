@@ -7,11 +7,14 @@
   "author": "Osman Fikret Ceylan & Önder Ceylan",
   "license": "MIT",
   "scripts": {
+    "start": "live-server --open=/dist/index.html --host=localhost --port=8080 --no-browser",
     "dev": "npx tailwindcss -i ./css/style.css -o ./style.css --watch",
     "build": "npx tailwindcss -i ./css/style.css -o ./style.css"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
+    "live-server": "latest",
+    "prettier": "latest",
     "tailwindcss": "^3.3.6"
   }
 }
