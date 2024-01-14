@@ -68,6 +68,20 @@ module.exports = {
         wider: '0.02em',
         widest: '0.4em',
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 60s linear infinite',
+        'infinite-scroll-inverse': 'infinite-scroll-inverse 60s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'infinite-scroll-inverse': {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0)' },
+        },
+      },
     },
   },
   plugins: [],
