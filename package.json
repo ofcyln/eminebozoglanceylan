@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "live-server --open=/dist/index.html --host=localhost --port=8080 --no-browser",
-    "dev": "npx tailwindcss -i ./css/style.css -o ./style.css --watch",
-    "build": "npx tailwindcss -i ./css/style.css -o ./style.css"
+    "dev": "npx tailwindcss -i ./dist/css/style.css -o ./dist/style.css --watch",
+    "build": "npx tailwindcss -i ./dist/css/style.css -o ./dist/style.css"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

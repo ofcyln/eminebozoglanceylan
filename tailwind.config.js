@@ -1,10 +1,46 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './**/*.html',
-    './js/**/*.js',
-  ],
+  content: ['./dist/**/*.{html,js}'],
   theme: {
     extend: {
+      width: {
+        'w-0': '0',
+        'w-1/4': '25%',
+        'w-1/3': '33.333333%',
+        'w-1/2': '50%',
+        'w-2/3': '66.666666%',
+        'w-3/4': '75%',
+        full: '100%',
+        screen: '100vw',
+      },
+      paddingLeft: {
+        'pl-0': '0',
+        'pl-2': '8px',
+        'pl-4': '16px',
+        'pl-8': '32px',
+        'pl-12': '48px',
+      },
+      paddingRight: {
+        'pr-0': '0',
+        'pr-2': '8px',
+        'pr-4': '16px',
+        'pr-8': '32px',
+        'pr-12': '48px',
+      },
+      marginLeft: {
+        'ml-0': '0',
+        'ml-2': '8px',
+        'ml-4': '16px',
+        'ml-8': '32px',
+        'ml-12': '48px',
+      },
+      marginRight: {
+        'mr-0': '0',
+        'mr-2': '8px',
+        'mr-4': '16px',
+        'mr-8': '32px',
+        'mr-12': '48px',
+      },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         'cabinet-grotesk': ['Cabinet Grotesk', 'sans-serif'],
@@ -34,8 +70,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    // eslint-disable-next-line global-require
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [],
 };

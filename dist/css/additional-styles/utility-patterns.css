@@ -39,52 +39,6 @@
     @apply px-4 py-2;
 }
 
-/* Forms */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-}
-
-.form-input,
-.form-textarea,
-.form-multiselect,
-.form-select,
-.form-checkbox,
-.form-radio {
-    @apply bg-white border border-gray-200 focus:border-blue-500;
-}
-
-.form-input,
-.form-textarea,
-.form-multiselect,
-.form-select,
-.form-checkbox {
-    @apply rounded;
-}
-
-.form-input,
-.form-textarea,
-.form-multiselect,
-.form-select {
-    @apply text-sm px-3 py-2;
-}
-
-.form-input,
-.form-textarea {
-    @apply placeholder-gray-400;
-}
-
-.form-select {
-    @apply pr-10;
-}
-
-.form-checkbox,
-.form-radio {
-    @apply text-blue-500 rounded-sm;
-}
-
 /* Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
     display: none;
